@@ -31,7 +31,7 @@ $(document).ready(function(){
     function feedKoalas() {
         var brand = $("#bananas").val();
         var numKoalas = $("#koalas").val();
-        $("p").text('You fed ${brand} bananas to ${numKoalas} koalas');
+        $("p").text(`You fed ${brand} bananas to ${numKoalas} koalas`);
     };
 
     $("form").validate({
