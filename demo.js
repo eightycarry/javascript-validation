@@ -32,8 +32,13 @@ $(document).ready(function(){
         var brand = $("#bananas").val();
         var numKoalas = $("#koalas").val();
         $("p").text('You fed ${brand} bananas to ${numKoalas} koalas');
-    }
+    };
 
-    $("form").validate();
+    $("form").validate({
+        submitHandler: feedKoalas,
+        rules: myRules,
+        messages: myMessages
+    });
+
 
 });
